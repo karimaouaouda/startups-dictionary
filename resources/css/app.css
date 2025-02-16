@@ -9,7 +9,10 @@
     display: none;
 }
 
+html{
+    @apply w-full
+}
 *{
     font-family: 'Poppins';
-    @apply text-slate-800
+    @apply text-slate-800 m-0 p-0
 }

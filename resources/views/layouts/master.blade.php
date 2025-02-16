@@ -13,7 +13,7 @@
     <!-- Styles -->
     @livewireStyles
 </head>
-<body class="w-screen overflow-x-hidden h-screen bg-slate-100">
+<body class="w-full m-0 p-0 h-screen bg-slate-100">
 <div>
     {{ $slot }}
 </div>

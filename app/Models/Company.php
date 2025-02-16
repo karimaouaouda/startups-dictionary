@@ -21,4 +21,9 @@ class Company extends Model
     {
         return $this->morphOne(Address::class, 'addressable');
     }
+
+    public function tags(): BelongsToMany
+    {
+        return $this->belongsToMany(Tag::class, 'company_tags');
+    }
 }

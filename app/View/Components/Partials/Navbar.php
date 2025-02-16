@@ -11,7 +11,7 @@ class Navbar extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct(public string $page)
     {
         //
     }
@@ -21,6 +21,8 @@ class Navbar extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.partials.navbar');
+        return view('components.partials.navbar', [
+            'page' => $this->page
+        ]);
     }
 }
